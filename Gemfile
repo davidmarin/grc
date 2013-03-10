@@ -25,22 +25,22 @@ platforms :ruby do
     gem 'sqlite3'
   end
 
-  group :heroku do
-    gem "pg"
-  end
+  #group :heroku do
+  #  gem "pg"
+  #end
 
-  group :staging do
-    gem "mysql2"
-  end
+  #group :staging do
+  #  gem "mysql2"
+  #end
 
-  group :production do
-    gem "mysql2"
-  end
+  #group :production do
+  #  gem "mysql2"
+  #end
 end
 
 platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter'
-  gem 'activerecord-jdbcmysql-adapter'
+  #gem 'activerecord-jdbcmysql-adapter'
 
   group :development do
     gem 'warbler', '1.3.5'
@@ -132,3 +132,5 @@ group(:development, :test) do
   # gem 'redcarpet'
   gem 'test-unit'
 end
+
+source 'https://rubygems.org'
